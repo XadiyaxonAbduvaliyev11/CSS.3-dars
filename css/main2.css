@@ -1,0 +1,183 @@
+body{
+    background-color: #cbc3da;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: #ffffff;
+}
+.navbar-menu{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.navbar-item{
+    display: inline-block;
+    padding: 24px 10px;
+}
+.navbar-item a{
+    color: #808080;
+    text-decoration: none;
+}
+.navbar-menu:before{
+    content: '';
+    width: 300px;
+    height: 60px;
+    display: inline-block;
+    background-image: url("../rasmlar/uztelecom.svg");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 22px 38px;
+}
+.navbar-item:hover{
+    background-color: #f1f1f1;
+}
+.navbar-item:hover a{
+    color: royalblue;
+}
+.sticky{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.bodge{
+    background-color:darkgrey ;
+    color: #ffffff;
+    width: 25px;
+    text-align: center;
+    line-height: 20px;
+    padding: 0 5px;
+    position: absolute;
+    top: 26px;
+    left: 16px;
+}
+.navbar-item{
+    position: relative;
+}
+.drop-menu{
+    text-align: left;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 160px;
+    background-color: #f1f1f1;
+    z-index: 1;
+    display: none;
+}
+.navbar-item:hover .drop-menu{
+    display: block;
+}
+.drop-item-2:after{
+    content: '';
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background-image: url("../rasmlar/down-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center center;
+    vertical-align: middle;
+    margin-left: 5px;
+    transform:rotate(-90deg) ;
+}
+.btn{
+    background-image: url("../rasmlar/avatar1.png");
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width:45px ;
+    height: 50px;
+    border: 1px solid #ffdd00;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    padding: 0 5px;
+    position: fixed;
+    bottom: 40px;
+    right: 35px;
+}
+.hi{
+    background-color:#ffdd00;
+    color:black;
+    width: 70px;
+    height: 20px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 20px;
+    padding: 0 5px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    font-size: 8px;
+}
+.btn:focus{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid white;
+    background-size: 30%;
+    background-position: 20px 10px;
+    z-index: -9999;
+}
+.tina{
+    width: 120px;
+    height: 70px;
+    border: grey 1px solid;
+    background-color: #ffdd00;
+    color: black;
+    border-radius: 15px;
+    text-align: center;
+    position: fixed;
+    bottom: 150px;
+    right: 55px;
+    font-size: 10px;
+    display:inline-block;
+}
+.who{
+    width: 110px;
+    height: 15px;
+    background-color: #f1f1f1;
+    border: #ffdd00 1px solid;
+    text-align: center;
+    border-radius: 8px;
+    color: dimgray;
+    position: fixed;
+    bottom: 50px;
+    right: 55px;
+    font-size: 10px;
+    display: none;
+}
+.btn:focus .tina{
+    width: 120px;
+    height: 70px;
+    border: grey 1px solid;
+    background-color: #ffdd00;
+    color: black;
+    border-radius: 15px;
+    text-align: center;
+    position: fixed;
+    bottom: 150px;
+    right: 55px;
+    font-size: 10px;
+    display: none;
+    z-index: 9999;
+}
+.btn:focus .who{
+    width: 110px;
+    height: 15px;
+    background-color: #f1f1f1;
+    border: #ffdd00 1px solid;
+    text-align: center;
+    border-radius: 8px;
+    color: dimgray;
+    position: fixed;
+    bottom: 50px;
+    right: 55px;
+    font-size: 10px;
+    display: none;
+    z-index: 9999;
+}
